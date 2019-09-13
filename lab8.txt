@@ -1,0 +1,3 @@
+Ecrire un bloc PL/SQL afin d'insérer 10 employés ayant les mêmes données 
+que l'employé 100 en utilisant des id successifs en commençant 
+avec le dernier id de la table.
