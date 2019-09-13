@@ -1,0 +1,29 @@
+Ajouter un bloc anonyme avec le libellé employee
+- Déclarer la variable v_nom afin de stocker le nom de l'employé
+dont l'id est 110
+- Afficher le nom de l'employé
+
+Ajouter un bloc imbriqué avec le libellé department
+- Déclarer la variable v_nom afin de stocker le nom du département
+- Afficher le nom de l'employé ainsi que le nom du département
+
+==> Rappel/Bloc imbriqué
+
+DECLARE
+    -- Déclaration des variables
+BEGIN <<employee>>
+    -- Instructions à exécuter
+    DECLARE
+        -- Déclaration des variables
+    BEGIN <<department>>
+        -- Instructions à exécuter
+    END
+END;
+
+==> Rappel/Accès sysdba
+
+En cas d'oubli du mot de passe de l'administrateur de la BD:
+
+sqlplus /nolog
+conn / as sysdba
+alter user system identified by <password>
