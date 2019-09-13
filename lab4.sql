@@ -1,6 +1,9 @@
+SET SERVEROUTPUT ON;
+
+BEGIN <<employee>>
 DECLARE
     v_nom employees.last_name%TYPE;
-BEGIN <<employee>>
+BEGIN
     SELECT last_name 
     INTO v_nom
     FROM employees
@@ -8,9 +11,10 @@ BEGIN <<employee>>
     
     DBMS_OUTPUT.PUT_LINE('Le nom de l''employé est: ' || v_nom);
     
+    BEGIN <<department>>
     DECLARE
         v_nom departments.department_name%TYPE;
-    BEGIN <<department>>
+    BEGIN
         /*SELECT department_name
         INTO v_nom
         FROM departments
@@ -26,5 +30,7 @@ BEGIN <<employee>>
         DBMS_OUTPUT.PUT_LINE('Le nom de l''employé est: ' || employee.v_nom || ', il est affecté
         au département ' || department.v_nom);
         
+    END;
     END department;
+END;
 END employee;
