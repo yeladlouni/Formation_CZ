@@ -1,0 +1,11 @@
+Ecrire un bloc PL/SQL afin de:
+
+* Afficher 'O' si le first_name de l'employé 110 contient un 
+O majuscule
+* Afficher 'A' si le first_name de l'employé 110 contient un
+A majuscule
+* Afficher 'I' si le first_name de l'employé 110 contient un 
+I majuscule
+
+
+
