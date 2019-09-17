@@ -1,0 +1,11 @@
+Afficher pour chaque département les employés dans ce format:
+En utilisant des curseurs imbriqués.
+
+Départment: Finances:
+    - Employé: first_name last_name salary
+    - Employé: 
+
+Départment Sales:
+    - Employé: first_name last_name salary
+    -
+...
