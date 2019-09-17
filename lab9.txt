@@ -1,0 +1,4 @@
+Ecrire un bloc PL/SQL (Boucle + Enregistrement + Tableau) afin d'afficher
+ pour les employés 110 et 101 le nom de département de la
+  manière suivante:
+- first_name last_name salary department_named:
