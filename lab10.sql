@@ -9,22 +9,17 @@ DECLARE
     CURSOR c_dept_cursor IS
     SELECT *
     FROM departments;
+    
+    dept c_dept_cursor%ROWTYPE;
+    emp c_emp_cursor%ROWTYPE;
 BEGIN
-
-    OPEN c_dept_cursor;
     
     FOR dept IN c_dept_cursor LOOP
         DBMS_OUTPUT.PUT_LINE('Département: ' || dept.department_name);
-        OPEN c_emp_cursor(dept.department_id);
         
         FOR emp IN c_emp_cursor(dept.department_id) LOOP
-            DBMS_OUTPUT.PUT_LINE('Département: ' || dept.department_name);
+            DBMS_OUTPUT.PUT_LINE('    Employé: ' || emp.first_name || ' ' || emp.last_name ||
+            ' ' || emp.salary);
         END LOOP;
-        
-        CLOSE c_emp_cursor;
-
     END LOOP;
-    
-    CLOSE c_dept_cursor;
-
 END;
