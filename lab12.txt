@@ -1,0 +1,6 @@
+* Ecrire une procédure afin de mettre en majuscule le
+prénom et le nom de chaque employé 
+* Ecrire une fonction afin de retourner pour un département
+le nombre d'employés et la masse salariale relative.
+ - Afficher une erreur "aucun employé n'est affecté 
+ au département" si le département est vide.
